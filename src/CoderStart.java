@@ -1,7 +1,4 @@
 import gui.MainPanel;
-import logik.ShifCezerya;
-import logik.ShifrA1Z26;
-import logik.ShifrVinigira;
 
 import javax.swing.*;
 

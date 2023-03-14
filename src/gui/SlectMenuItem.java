@@ -20,7 +20,8 @@ public class SlectMenuItem extends JComboBox<String> {
         String[] items = {
                 "Шифр Виженера",
                 "Шифр Цезаря",
-                "A1Z26"
+                "A1Z26",
+                "Атбаш"
         };
         Font font = getFont();
         setFont( font.deriveFont( 16.f ) );
@@ -46,6 +47,11 @@ public class SlectMenuItem extends JComboBox<String> {
                     PanelKey.iter = 0;
                 }
                 if (selcted.equals(items[2])){
+                    PanelKey.labelKeyPanel.setText("Ничего писать не надо -> ");
+                    PanelKey.areaKeyPanel.setEnabled(false);
+                    PanelKey.iter = 0;
+                }
+                if (selcted.equals(items[3])){
                     PanelKey.labelKeyPanel.setText("Ничего писать не надо -> ");
                     PanelKey.areaKeyPanel.setEnabled(false);
                     PanelKey.iter = 0;

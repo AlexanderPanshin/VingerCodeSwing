@@ -2,6 +2,7 @@ package gui;
 
 import logik.ShifCezerya;
 import logik.ShifrA1Z26;
+import logik.ShifrAtbash;
 import logik.ShifrVinigira;
 
 import javax.swing.*;
@@ -31,6 +32,10 @@ public class ButtonCentrShifr extends JButton {
                     case "A1Z26":
                         ShifrA1Z26 sa = new ShifrA1Z26();
                         MainPanel.shifrovka.setText(sa.shifrator3(MainPanel.deshifrovka.getText()));
+                        break;
+                    case "Атбаш":
+                        ShifrAtbash shifrAtbash = new ShifrAtbash();
+                        MainPanel.shifrovka.setText(shifrAtbash.shifrator(MainPanel.deshifrovka.getText()));
                 }
 
 

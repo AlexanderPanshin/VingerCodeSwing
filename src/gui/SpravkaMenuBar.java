@@ -16,7 +16,7 @@ public class SpravkaMenuBar extends JMenu {
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(MainPanel.mainPanel,
                         "<html><i>Описание принципа работы программы</i><br>" +
-                                "Можно найти ","Помощь",JOptionPane.INFORMATION_MESSAGE);
+                                "Можно найти <a href=\"http://site.ru\">указатель ссылки</a>","Помощь",JOptionPane.INFORMATION_MESSAGE);
 
             }
         });
