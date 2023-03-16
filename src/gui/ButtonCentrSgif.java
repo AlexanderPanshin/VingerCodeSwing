@@ -1,9 +1,6 @@
 package gui;
 
-import logik.ShifCezerya;
-import logik.ShifrA1Z26;
-import logik.ShifrAtbash;
-import logik.ShifrVinigira;
+import logik.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -36,6 +33,10 @@ public class ButtonCentrSgif extends JButton {
                     case "Атбаш":
                         ShifrAtbash shifrAtbash= new ShifrAtbash();
                         MainPanel.deshifrovka.setText((shifrAtbash.deshifrator(MainPanel.shifrovka.getText())));
+                        break;
+                    case "Base64":
+                        ShifrBase64 shifrBase64 = new ShifrBase64();
+                        MainPanel.deshifrovka.setText((shifrBase64.deshifrator(MainPanel.shifrovka.getText())));
                 }
 
 

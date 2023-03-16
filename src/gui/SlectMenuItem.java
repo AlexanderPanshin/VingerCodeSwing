@@ -21,7 +21,8 @@ public class SlectMenuItem extends JComboBox<String> {
                 "Шифр Виженера",
                 "Шифр Цезаря",
                 "A1Z26",
-                "Атбаш"
+                "Атбаш",
+                "Base64"
         };
         Font font = getFont();
         setFont( font.deriveFont( 16.f ) );
@@ -46,12 +47,7 @@ public class SlectMenuItem extends JComboBox<String> {
                     PanelKey.areaKeyPanel.setEnabled(true);
                     PanelKey.iter = 0;
                 }
-                if (selcted.equals(items[2])){
-                    PanelKey.labelKeyPanel.setText("Ничего писать не надо -> ");
-                    PanelKey.areaKeyPanel.setEnabled(false);
-                    PanelKey.iter = 0;
-                }
-                if (selcted.equals(items[3])){
+                if (selcted.equals(items[3])||selcted.equals(items[2])||selcted.equals(items[4])){
                     PanelKey.labelKeyPanel.setText("Ничего писать не надо -> ");
                     PanelKey.areaKeyPanel.setEnabled(false);
                     PanelKey.iter = 0;
