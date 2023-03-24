@@ -37,6 +37,10 @@ public class ButtonCentrSgif extends JButton {
                     case "Base64":
                         ShifrBase64 shifrBase64 = new ShifrBase64();
                         MainPanel.deshifrovka.setText((shifrBase64.deshifrator(MainPanel.shifrovka.getText())));
+                        break;
+                    case "Плейфера":
+                        ShifrPleifera shifrPleifera = new ShifrPleifera(PanelKey.areaKeyPanel.getText());
+                        MainPanel.deshifrovka.setText(shifrPleifera.deshifrator(MainPanel.shifrovka.getText()));
                 }
 
 

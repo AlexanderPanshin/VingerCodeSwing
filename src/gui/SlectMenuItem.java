@@ -22,7 +22,8 @@ public class SlectMenuItem extends JComboBox<String> {
                 "Шифр Цезаря",
                 "A1Z26",
                 "Атбаш",
-                "Base64"
+                "Base64",
+                "Плейфера"
         };
         Font font = getFont();
         setFont( font.deriveFont( 16.f ) );
@@ -33,7 +34,7 @@ public class SlectMenuItem extends JComboBox<String> {
                 JComboBox<String> box = (JComboBox<String>) e.getSource();
                 String selcted = (String) box.getSelectedItem();
 
-                if (selcted.equals(items[0])){
+                if (selcted.equals(items[0])||selcted.equals(items[5])){
                     PanelKey.labelKeyPanel.setText("Введите ключевое слово -> ");
                     PanelKey.areaKeyPanel.setText("Введите ключ");
                     PanelKey.areaKeyPanel.getAccessibleContext().setAccessibleDescription("Здесь введите ключ шифровкию. Может быть любая фраза.");
