@@ -73,9 +73,11 @@ public class PanelKey extends JPanel {
         panelKey.validate();
     }
     public static void  removeEnRu(){
-        panelKey.remove(comboBox);
-        panelKey.validate();
-        panelKey.repaint();
+        if(comboBox!=null) {
+            panelKey.remove(comboBox);
+            panelKey.validate();
+            panelKey.repaint();
+        }
     }
 
     public static JComboBox<String> getComboBox() {
