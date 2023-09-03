@@ -41,6 +41,11 @@ public class ButtonCentrShifr extends JButton {
                     case "Плейфера":
                         ShifrPleifera shifrPleifera = new ShifrPleifera(PanelKey.areaKeyPanel.getText());
                         MainPanel.shifrovka.setText(shifrPleifera.shifrator(MainPanel.deshifrovka.getText()));
+                        break;
+                    case "HEX":
+                        ShifrHex shifrHex = new ShifrHex();
+                        MainPanel.shifrovka.setText(shifrHex.shifrator(MainPanel.deshifrovka.getText()));
+                        break;
                 }
 
 
