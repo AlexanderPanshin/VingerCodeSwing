@@ -12,6 +12,8 @@ public class PanelKey extends JPanel {
     static JLabel labelKeyPanel;
     static JTextArea areaKeyPanel;
 
+    static JComboBox<String> comboBox;
+
     static JScrollPane sc;
     private static JPanel panelKey;
 
@@ -63,5 +65,20 @@ public class PanelKey extends JPanel {
             panelKey = new PanelKey();
         }
         return  panelKey;
+    }
+    public static void addEnRu(){
+        String [] mass = {"Ru","En"};
+        comboBox = new JComboBox<>(mass);
+        panelKey.add(comboBox);
+        panelKey.validate();
+    }
+    public static void  removeEnRu(){
+        panelKey.remove(comboBox);
+        panelKey.validate();
+        panelKey.repaint();
+    }
+
+    public static JComboBox<String> getComboBox() {
+        return comboBox;
     }
 }
