@@ -46,6 +46,10 @@ public class ButtonCentrSgif extends JButton {
                         ShifrHex shifrHex = new ShifrHex();
                         MainPanel.deshifrovka.setText(shifrHex.deshifrator(MainPanel.shifrovka.getText()));
                         break;
+                    case "BIN":
+                        ShifrBin shifrBin = new ShifrBin();
+                        MainPanel.deshifrovka.setText(shifrBin.deshifrator(MainPanel.shifrovka.getText()));
+                        break;
                 }
 
 

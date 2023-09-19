@@ -46,6 +46,10 @@ public class ButtonCentrShifr extends JButton {
                         ShifrHex shifrHex = new ShifrHex();
                         MainPanel.shifrovka.setText(shifrHex.shifrator(MainPanel.deshifrovka.getText()));
                         break;
+                    case "BIN":
+                        ShifrBin shifrBin = new ShifrBin();
+                        MainPanel.shifrovka.setText(shifrBin.shifrator(MainPanel.deshifrovka.getText()));
+                        break;
                 }
 
 

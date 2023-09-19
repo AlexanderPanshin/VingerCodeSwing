@@ -27,5 +27,6 @@
 р с т у ф х ц ч 
 ш щ ъ ы ь э ю я
 7. Переводит строку в 16 код (HEX) и обратно
+8. Переодит строку в двоичный код (BIN) и обратно (UTF 16)
 
 jar файл для запуска можно взять [тут](https://github.com/AlexanderPanshin/VingerCodeSwing/tree/master/out/artifacts/VingerCodeSwing_jar)
