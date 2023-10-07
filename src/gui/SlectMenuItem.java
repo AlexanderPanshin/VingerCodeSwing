@@ -26,7 +26,8 @@ public class SlectMenuItem extends JComboBox<String> {
                 "Base64",
                 "Плейфера",
                 "HEX",
-                "BIN"
+                "BIN",
+                "\\xxx (C string)"
         };
         Font font = getFont();
         setFont( font.deriveFont( 16.f ) );
@@ -55,7 +56,8 @@ public class SlectMenuItem extends JComboBox<String> {
                     PanelKey.removeEnRu();
                     iterSelect = 0;
                 }
-                if (selcted.equals(items[3])||selcted.equals(items[2])||selcted.equals(items[4])||selcted.equals(items[6])||selcted.equals(items[7])){
+                if (selcted.equals(items[3])||selcted.equals(items[2])||selcted.equals(items[4])||selcted.equals(items[6])||selcted.equals(items[7])
+                ||selcted.equals(items[8])){
                     PanelKey.labelKeyPanel.setText("Ничего писать не надо -> ");
                     PanelKey.areaKeyPanel.setEnabled(false);
                     PanelKey.iter = 0;

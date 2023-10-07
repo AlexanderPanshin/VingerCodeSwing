@@ -50,6 +50,10 @@ public class ButtonCentrShifr extends JButton {
                         ShifrBin shifrBin = new ShifrBin();
                         MainPanel.shifrovka.setText(shifrBin.shifrator(MainPanel.deshifrovka.getText()));
                         break;
+                    case "\\xxx (C string)":
+                        ShifrCString shifrCString = new ShifrCString();
+                        MainPanel.shifrovka.setText(shifrCString.shifrator(MainPanel.deshifrovka.getText()));
+                        break;
                 }
 
 
