@@ -54,6 +54,10 @@ public class ButtonCentrSgif extends JButton {
                         ShifrCString shifrCString = new ShifrCString();
                         MainPanel.deshifrovka.setText(shifrCString.deshifrator(MainPanel.shifrovka.getText()));
                         break;
+                    case "ROT13":
+                        ShifrRot13 shifrRot13 = new ShifrRot13();
+                        MainPanel.deshifrovka.setText(shifrRot13.deshifrator(MainPanel.shifrovka.getText()));
+                        break;
                 }
 
 

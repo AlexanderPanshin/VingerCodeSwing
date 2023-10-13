@@ -54,6 +54,10 @@ public class ButtonCentrShifr extends JButton {
                         ShifrCString shifrCString = new ShifrCString();
                         MainPanel.shifrovka.setText(shifrCString.shifrator(MainPanel.deshifrovka.getText()));
                         break;
+                    case "ROT13":
+                        ShifrRot13 shifrRot13 = new ShifrRot13();
+                        MainPanel.shifrovka.setText(shifrRot13.shifrator(MainPanel.deshifrovka.getText()));
+                        break;
                 }
 
 
