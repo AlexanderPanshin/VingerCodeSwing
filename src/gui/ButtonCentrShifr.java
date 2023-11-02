@@ -58,6 +58,10 @@ public class ButtonCentrShifr extends JButton {
                         ShifrRot13 shifrRot13 = new ShifrRot13();
                         MainPanel.shifrovka.setText(shifrRot13.shifrator(MainPanel.deshifrovka.getText()));
                         break;
+                    case "URLCoder":
+                        ShifrUrl shifrUrl = new ShifrUrl();
+                        MainPanel.shifrovka.setText(shifrUrl.shifrator(MainPanel.deshifrovka.getText()));
+                        break;
                 }
 
 
