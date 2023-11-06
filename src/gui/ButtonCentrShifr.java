@@ -62,6 +62,10 @@ public class ButtonCentrShifr extends JButton {
                         ShifrUrl shifrUrl = new ShifrUrl();
                         MainPanel.shifrovka.setText(shifrUrl.shifrator(MainPanel.deshifrovka.getText()));
                         break;
+                    case "Byte":
+                        ShifrByte shifrByte = new ShifrByte();
+                        MainPanel.shifrovka.setText(shifrByte.shifrator(MainPanel.deshifrovka.getText()));
+                        break;
                 }
 
 
